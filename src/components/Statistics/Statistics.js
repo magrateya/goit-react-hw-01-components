@@ -8,7 +8,17 @@ export default function Statistics({ title, stats }) {
 
       <ul className={s.statList}>
         {stats.map(stat => (
-          <li className={s.item} key={stat.id}>
+          <li
+            className={s.item}
+            key={stat.id}
+            style={{
+              backgroundColor:
+                '#' +
+                Math.floor(Math.random() * 256).toString(16) +
+                Math.floor(Math.random() * 256).toString(16) +
+                Math.floor(Math.random() * 256).toString(16),
+            }}
+          >
             <span className={s.label}>{stat.label}</span>
             <span className={s.percentage}>{stat.percentage}%</span>
           </li>

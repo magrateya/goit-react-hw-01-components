@@ -28,6 +28,8 @@
   background-color: gray;
 }
 .avatar {
+  display: block;
 }
 .name {
+  font-weight: bold;
 }
